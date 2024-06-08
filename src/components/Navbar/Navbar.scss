@@ -1,0 +1,77 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4em 10em 1.4em 6.9em;
+
+    .left {
+        
+        .main-logo {
+            width: 180px;
+            height: auto;;
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+
+            a {
+                text-decoration: none;
+                color: var(--colorPrimary);
+                font-size: 0.95em;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .goal {
+
+            img {
+                width: auto;
+                height: 45px;
+            }
+        }
+
+        .social {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 6px;
+
+            .socmed {
+                display: flex;
+                gap: 12px;
+    
+                .icon img {
+                    width: 32px;
+                }
+            }
+        }
+
+        .language {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #3221c7;
+            font-weight: 400;
+            gap: 4px;
+            cursor: pointer;
+
+            svg {
+                color: #3221c7;
+                font-weight: 100;
+            }
+        }
+    }
+
+}
