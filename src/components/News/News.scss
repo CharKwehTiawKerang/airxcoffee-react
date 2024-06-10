@@ -1,0 +1,77 @@
+.news {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 36px;
+
+    h2 {
+        font-size: 26px;
+        color: var(--colorPrimary);
+    }
+
+    .new-title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .item {
+            width: 80%;
+            
+            a {
+                width: 100%;
+                color: var(--colorSecondary);
+                text-decoration: none;
+                padding: 12px 0;
+                border-bottom: 1px solid rgb(185, 185, 185);
+    
+                &:hover {
+                    color: grey;
+                    text-decoration: underline;
+                }
+
+                &:nth-child(1) {
+                    float: right;
+                }
+            }
+        }
+
+        .top a {
+            text-align: right;
+        }
+    }
+
+    .AirX {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 100px 0;
+
+        img {
+            width: 250px;
+        }
+
+        .sdglogo {
+            width: 220px;
+        }
+
+        div {
+            width: 420px;
+
+            h2 {
+                font-size: 23px;
+                color: var(--colorPrimary);
+            }
+
+            h3 {
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 32px;
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 import './App.scss'
 
-import { Home, Contact } from './pages'
+import { Home, AboutUs, Contact } from './pages'
 import { Navbar, Footer } from './components'
 
 const Layout = () => {
@@ -22,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />
+      },
+      {
+        path: '/aboutus',
+        element: <AboutUs />
       },
       {
         path: '/contact',

@@ -1,10 +1,14 @@
 import React from 'react'
 import './Home.scss';
 
+import { Slider, News, Card } from '../../components'
+
 const Home = () => {
   return (
     <div className='home'>
-      Home
+      <Slider />
+      <News />
+      <Card />
     </div>
   )
 }
