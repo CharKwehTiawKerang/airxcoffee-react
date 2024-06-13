@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Slider.scss'
 
 import topOne from '../../assets/top1.jpg'
@@ -11,6 +11,17 @@ const Slider = () => {
   const slide = {
     transform: 'translateX(-15%)'
   }
+
+  useEffect(() => {
+    if (image == 'topOne') {
+      document.getElementById('one').checked = true;
+    } else if (image == 'topTwo') {
+      document.getElementById('two').checked = true;
+    } else if (image == 'topThree') {
+      document.getElementById('three').checked = true;
+    }
+  }, [])
+  
 
   return (
     <div className='slider'>
