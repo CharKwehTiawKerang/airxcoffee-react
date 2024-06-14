@@ -1,3 +1,24 @@
 .map {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    span {
+        width: 820px;
+        margin: 48px 0;
+    }
+
+    .location-container {
+        position: relative;
+
+        .location-info {
+            width: 100px;
+            position: absolute;
+            background-color: aqua;
+            z-index: 1;
+        }
+    }
+
 }
